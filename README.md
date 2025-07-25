@@ -1,2 +1,18 @@
-# Timothy-Agwujah-Portfolio
-Project Description Timothy Agwujah Portfolio Website is a personal web portfolio built with React and styled using standard CSS. It showcases my profile, development projects, technical skills, a dynamic image gallery, and contact information — all aimed at demonstrating my capabilities as a full-stack software developer and virtual assistant.
+# Timothy Agwujah - Portfolio
+
+This is my personal portfolio built with React.js.  
+It showcases my projects, bio, and contact information.
+
+## Features
+- About Me section
+- Project highlights
+- Contact information
+- Responsive design
+
+## Technologies Used
+- React.js
+- CSS
+- HTML
+
+## Author
+**Timothy Dominance Agwujah**
