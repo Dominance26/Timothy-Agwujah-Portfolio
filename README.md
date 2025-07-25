@@ -15,4 +15,4 @@ It showcases my projects, bio, and contact information.
 - HTML
 
 ## Author
-**Timothy Dominance Agwujah**
+**Timothy Dominance Job Agwujah**
