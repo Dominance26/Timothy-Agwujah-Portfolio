@@ -1,42 +1,81 @@
-<section id="projects" className="py-16 px-4 bg-gray-50">
-  <div className="max-w-4xl mx-auto text-center">
-    <h2 className="text-3xl font-semibold text-gray-800 mb-6">Projects</h2>
-    <div className="bg-white p-6 rounded-lg shadow">
-      <h3 className="text-xl font-bold text-gray-800 mb-2">TaskMaster</h3>
-      <p className="text-gray-700 mb-3">
-        A task management tool built with Node.js and MongoDB. Designed for productivity and team collaboration.
-      </p>
-      <a
-        href="#"
-        className="text-blue-600 font-medium hover:underline"
-      >
-        View Project
-      </a>
-    </div>
-  </div>
-</section>
+// src/components/Projects.jsx
+import React from "react";
 
-const Projects = () => (
-  <section id="projects" className="py-20 px-4 md:px-8 lg:px-16 bg-white">
-    <div className="max-w-6xl mx-auto">
-      <h3 className="text-2xl md:text-3xl font-semibold mb-8">Projects</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-gray-50 border rounded-lg p-6 shadow hover:shadow-md transition">
-          <h4 className="text-xl font-bold mb-2">TaskMaster</h4>
-          <p className="text-gray-700 mb-3">
-            A task management tool built with Node.js and MongoDB. Designed for productivity and team collaboration.
-          </p>
-          <a href="#" className="text-blue-600 hover:underline">View Project</a>
-        </div>
-        <div className="bg-gray-50 border rounded-lg p-6 shadow hover:shadow-md transition">
-          <h4 className="text-xl font-bold mb-2">EduCast</h4>
-          <p className="text-gray-700 mb-3">
-            An offline-first educational platform for underserved communities, built with scalability and efficiency in mind.
-          </p>
-          <a href="#" className="text-blue-600 hover:underline">View Project</a>
-        </div>
+const projects = [
+  {
+    title: "DIF Capstone",
+    description: "An eCommerce platform inspired by Jumia, featuring product listing, cart, checkout, and authentication.",
+    github: "https://github.com/Dominance26/DIF-Capstone1"
+  },
+  {
+    title: "EduCast",
+    description: "A low-bandwidth, offline-first education delivery system built for resource-constrained computing environments.",
+    github: "https://github.com/Dominance26/EduCast"
+  },
+  {
+    title: "Farm Website",
+    description: "A farm company template website recreated from Figma, with sections for services, blog, testimonials, and company info.",
+    github: "https://github.com/Dominance26/farm-website-Timothy-Agwujah"
+  },
+  {
+    title: "TaskMaster",
+    description: "A full-stack task management web app with Node.js, Express, MongoDB, and React frontend for productivity tracking.",
+    github: "https://github.com/Dominance26/TASK-MASTER"
+  },
+  {
+    title: "Network Detector",
+    description: "A tool to detect available network connections and display connectivity information.",
+    github: "https://github.com/Dominance26/network-detector"
+  },
+  {
+    title: "Get A Job",
+    description: "A simple app designed to help users search and track job opportunities.",
+    github: "https://github.com/Dominance26/get-a-job--Timothy-Dominance-Job-Agwujah"
+  },
+  {
+    title: "Huffman Algorithm",
+    description: "Implementation of Huffman coding for data compression using JavaScript.",
+    github: "https://github.com/Dominance26/Huffman-Algorithm"
+  },
+  {
+    title: "RGB Color Game",
+    description: "An interactive RGB color guessing game built with JavaScript DOM manipulation.",
+    github: "https://github.com/Dominance26/RGB-Game-Timothy-Dominance-Job-Agwujah"
+  },
+  {
+    title: "HTTP Request Project",
+    description: "A project demonstrating how to make HTTP requests and handle responses in JavaScript.",
+    github: "https://github.com/Dominance26/HTTP-REQUEST-Timothy-Dominance-Job-Agwujah"
+  },
+  {
+    title: "Atbash Cipher",
+    description: "A classic cryptography project implementing the Atbash cipher for text encryption and decryption.",
+    github: "https://github.com/Dominance26/atbsh-cipher"
+  }
+];
+
+function Projects() {
+  return (
+    <div className="projects">
+      <h2>Projects</h2>
+      <div className="project-list">
+        {projects.map((project, index) => (
+          <div key={index} className="project-card">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a 
+              href={project.github} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              View on GitHub
+            </a>
+          </div>
+        ))}
       </div>
     </div>
-  </section>
-);
+  );
+}
+
 export default Projects;
